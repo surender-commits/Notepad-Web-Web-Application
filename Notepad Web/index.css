@@ -1,0 +1,178 @@
+main {
+    padding: 1rem;
+}
+
+#toolBox {
+    /* margin-top: 1.2rem; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+#files {
+    margin-top: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#files>h4 {
+    padding: 0.2rem 0rem;
+    min-width: 6rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--white-color);
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+#files>h4:hover {
+    filter: brightness(1.2);
+}
+
+textarea {
+    margin: 0.5rem 0rem;
+    padding: 0.2rem;
+    resize: vertical;
+    height: 50vh;
+    line-height: 1.5rem;
+    word-break: keep-all;
+    background: var(--white-color);
+    border: 1px solid var(--black-color);
+    color: var(--black-color);
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+textarea:hover {
+    border-color: var(--white-color);
+    box-shadow: 0px 0px 8px 0px var(--primary-color);
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+#box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#details {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    width: fit-content;
+}
+
+#details>h4 {
+    margin: 0.2rem 0rem;
+    padding: 0.2rem 0.2rem;
+    width: 12rem;
+    text-align: left;
+    font-weight: 300;
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
+#details>span {
+    margin: 0.2rem 0rem;
+    padding: 0.2rem 0.2rem;
+    width: 8rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--black-color);
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+
+#func {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    width: fit-content;
+}
+
+#func>h4 {
+    margin: 0.2rem 0rem;
+    padding: 0.2rem 0.2rem;
+    width: 12rem;
+    text-align: left;
+    font-weight: 300;
+    color: var(--white-color);
+    background: var(--primary-color);
+    cursor: pointer;
+
+    transition: backdrop-filter, filter, color, background, background-color, box-shadow, border;
+    transition-duration: 0.5s;
+}
+
+#func>h4:hover {
+    filter: brightness(1.2);
+}
+
+
+
+
+
+/* This CSS for Text */
+#toolText {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+#toolText>* {
+    line-height: 2.2rem;
+}
+
+#toolText>h2 {
+    margin: 1.2rem 0;
+}
+
+#toolText li {
+    list-style: none;
+    font-weight: 300;
+}
+
+#toolText h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 2.2rem;
+    background: linear-gradient(90deg, transparent, var(--grey-color), transparent);
+}
+
+#toolText p {
+    font-weight: 300;
+}
+
+#toolText pre {
+    font-weight: 300;
+}
+
+#toolText b {
+    font-weight: 400;
+}
+
+#toolText strong {
+    font-weight: 500;
+}

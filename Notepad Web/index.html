@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYZ || Home</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./color-var.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="logo" onclick="window.open('./index.html', '_self')">XYZ</div>
+    <ul id="navLinks">
+      <li onclick="window.open('./index.html', '_self')" class="active-menu">Home</li>
+      <li onclick="window.open('./tools.html', '_self')">Tools</li>
+      <li onclick="window.open('./aboutus.html', '_self')">About Us</li>
+      <li onclick="window.open('./aboutus.html', '_self')">Contact Us</li>
+      <li onclick="window.open('./privacypolicy.html', '_self')">Privacy Policy</li>
+      <li onclick="window.open('./termsandconditions.html', '_self')">T&C</li>
+    </ul>
+    <div class="menu-btn"><img id="menuImg" src="menu.png" alt="menu exped and collape"></div>
+
+  </nav>
+
+  <main>
+
+    <div id="toolBox">
+
+      <h2>Notepad</h2>
+
+      <div id="files">
+        <input type="file" id="fileInput" accept=".txt" style="display: none;">
+        <h4 onclick="this.previousElementSibling.click()">Open File</h4>
+        <h4 onclick="paste()">Paste</h4>
+        <h4 onclick="copyAll(this)">Copy All</h4>
+        <h4 onclick="clearAll()">Clear All</h4>
+        <h4 onclick="downloadFile()">Download</h4>
+      </div>
+
+      <textarea id="textarea" placeholder="Your Text Come Here..."></textarea>
+
+      <div id="box">
+
+        <div id="details">
+
+          <h4> Characters(with Spaces) </h4> <span id="char">0</span>
+          <h4> Words </h4> <span id="words">0</span>
+          <h4> White Spaces </h4> <span id="spaces">0</span>
+          <h4> Lines </h4> <span id="lines">0</span>
+
+        </div>
+
+        <div id="func">
+          <h4 onclick="ChangeCase('sentencecase')">Sentence case</h4>
+          <h4 onclick="ChangeCase('titlecase')">Title Case</h4>
+          <h4 onclick="ChangeCase('uppercase')">UPPERCASE</h4>
+          <h4 onclick="ChangeCase('lowercase')">lowercase</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="toolText">
+      
+    </div>
+
+  </main>
+
+  <footer>
+    <hr>
+    All Rights <sup>©</sup> Reserved To The "XYZ"
+  </footer>
+</body>
+<script src="./script.js"></script>
+<script src="./index.js"></script>
+
+</html>
